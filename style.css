@@ -1,13 +1,22 @@
 body {
-      font-family: Arial, sans-serif;
-      background: #111;
-      color: #0f0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-    .countdown {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    background: #111;
+    color: #0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('./images/tiled-wall.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+.countdown {
       font-size: 3em;
       letter-spacing: 2px;
     }
