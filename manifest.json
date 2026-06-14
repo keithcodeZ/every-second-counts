@@ -1,0 +1,20 @@
+{
+  "name": "Every Second Counts",
+  "short_name": "ESC",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a1128",
+  "theme_color": "#0f1b3c",
+  "icons": [
+    {
+      "src": "/images/ESC.webp",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/ESC.webp",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
