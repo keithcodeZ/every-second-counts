@@ -4,37 +4,9 @@
   <meta charset="UTF-8">
   <title>Countdown to Jan 1, 2027</title>
     <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
 </head>
 <body>
   <div class="countdown" id="countdown"></div>
-
-  <script>
-    // Target date: Jan 1, 2027 at 00:00
-    const targetDate = new Date("January 1, 2027 00:00:00").getTime();
-
-    function updateCountdown() {
-      const now = new Date().getTime();
-      const distance = targetDate - now;
-
-      // Time calculations
-      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-      // Format as DDD:HH:MM:SS
-      const formatted = `${days.toString().padStart(3, '0')}:${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
-
-      document.getElementById("countdown").textContent = formatted;
-
-      if (distance < 0) {
-        document.getElementById("countdown").textContent = "000:00:00:00";
-      }
-    }
-
-    // Update every second
-    setInterval(updateCountdown, 1000);
-    updateCountdown();
-  </script>
 </body>
 </html>
