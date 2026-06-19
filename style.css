@@ -14,7 +14,7 @@ body {
     overflow: hidden;
 }
 .countdown {
-    /* background: #080f1f; */
+    background: #080f1f;
     padding: 40px;
     font-family: "Roboto Mono", monospace;
     font-weight: 400;
