@@ -1,5 +1,10 @@
+// Register service worker
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/sw.js');
+}
+
 // Target date: Jan 1, 2027 at 00:00
-    const targetDate = new Date("January 1, 2027 00:00:00").getTime();
+const targetDate = new Date("January 1, 2027 00:00:00").getTime();
 
     function updateCountdown() {
       const now = new Date().getTime();

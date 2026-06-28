@@ -1,10 +1,9 @@
 body {
-    background: #111;
+    background-color: #111;
     color: #edf2f7;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     background: url('./images/tiled-wall.jpg');
     background-size: cover;
     background-repeat: no-repeat;
